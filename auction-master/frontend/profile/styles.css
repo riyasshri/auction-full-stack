@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+}
+
+.logo {
+  border-radius: 50%;
+  margin-top: 4.5px;
+  float: left;
+  margin-left: 4px;
+}
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 5em;
+}
+
+nav button {
+  display: inline;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right;
+}
+
+.navbar button {
+  background: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  vertical-align: middle;
+  margin-top: 1.1em;
+  margin-right: 4em;
+}
+
+nav button:hover,
+nav button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: white;
+}
+
+form {
+  background-color: black;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  margin-top: 18px;
+  margin-left: 150px;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+form button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+/* main content */
+
+.content {
+  display: grid;
+  grid-template-columns: 15% 80%;
+}
+.tab-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25em;
+  margin-top: 2em;
+}
+
+.tablinks {
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin-left: 10px;
+}
+
+.content-menu {
+  position: absolute;
+  margin-top: 6em;
+  margin-left: 50%;
+}
+
+/* ADD and history  button*/
+
+.button {
+  background: linear-gradient(to bottom right, #191918, rgb(3, 3, 3));
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 30px 0 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.all_item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.search {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: black;
+}

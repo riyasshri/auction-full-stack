@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="forgpass.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    
+    <h2>Don't worry we'll help you set up a new password.</h2>
+    <br />
+    <div class="login">
+      <form id="login" method="post">
+        <label><b>Enter your Email </b> </label>
+        <input type="email" name="femail" id="femail" placeholder="Email" />
+        <br /><br />
+        <br /><br />
+        <input
+          type="button"
+          name="log"
+          id="log"
+          value="send verification email"
+          onclick="sendEmail()"
+        />
+      </form>
+    </div>
+  </body>
+</html>

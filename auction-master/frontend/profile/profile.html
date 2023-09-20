@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="profile.js"></script>
+    <script src="../nav.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body onload="verify();loadnav();verify_nav()">
+    <nav id="nav_inject"></nav>
+    <div class="content">
+      <div class="container" style="margin-left: 20px" width="30">
+        <img
+          src="../img/logo.jpg"
+          alt="user"
+          style="
+            border-radius: 50%;
+            margin-top: 4.5px;
+            margin-left: 4px;
+            margin-right: 10px;
+          "
+          height="150"
+          width="150"
+        />
+        <h2
+          style="
+            font-family: sans-serif;
+            margin-left: 20px;
+            font-size: 20px;
+            padding-bottom: 1em;
+          "
+          id="name"
+        ></h2>
+        <h5
+          style="
+            font-family: sans-serif;
+            margin-left: 20px;
+            opacity: 0.75;
+            font-size: 15px;
+          "
+          id="email"
+        ></h5>
+        <br />
+        <a href="/frontend/add/add.html">
+          <button class="button">Add</button>
+        </a>
+        <br /><br />
+        <a href="/frontend/history/history.html">
+          <button class="button">History</button>
+        </a>
+        <br /><br />
+      </div>
+      <div class="tab-buttons">
+        <button class="tablinks" onclick="userTabs(event, 'inAuction')">
+          In auction
+        </button>
+        <button class="tablinks" onclick="userTabs(event, 'inBidding')">
+          In Bidding
+        </button>
+      </div>
+
+      <div class="content-menu">
+        <div id="inAuction" class="tabcontent">
+          <h3>In Auction</h3>
+          <div class="all_item" id="all_item_auction"></div>
+        </div>
+        <div id="inBidding" class="tabcontent" style="display: none">
+          <h3>In Bidding</h3>
+          <div class="all_item" id="all_item_bid"></div>
+        </div>
+      </div>
+      <script>
+        function userTabs(evt, action) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(action).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+    </div>
+  </body>
+</html>

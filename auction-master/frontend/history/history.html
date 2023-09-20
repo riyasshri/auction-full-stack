@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="history.js"></script>
+    <script src="../nav.js"></script>
+  </head>
+
+  <body onload="verify_nav();fetchHistory();loadnav()">
+    <nav id="nav_inject"></nav>
+    <center>
+      <h2 class="title">Order History</h2>
+    </center>
+    <div class="product_grid" id="product_grid"></div>
+  </body>
+</html>

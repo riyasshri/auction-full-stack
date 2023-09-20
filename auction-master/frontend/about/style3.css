@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+}
+
+
+.logo {
+    border-radius: 50%;
+    margin-top: 4.5px;
+    float: left;
+    margin-left: 4px;
+
+
+}
+nav img:hover{
+    transform: scale(1.1);
+}
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 5em;
+}
+
+
+
+nav button {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    border-radius: ;
+
+}
+
+.navbar button {
+    background: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    margin-top: 1.1em;
+    margin-right: 4em;
+}
+
+
+nav button:hover,
+nav button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: white;
+    transform: scale(1.1);
+}
+
+form {
+    background-color: black;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    margin-top: 18px;
+    margin-left: 150px;
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+form button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    
+}
+
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+form:focus-within,form:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    font-size: 60px;
+    color: black;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+.text{
+    padding: 0px 400px 40px 400px;
+    color:black;
+    font-style: italic;
+    font-size: 20px;
+}
+.cont{
+    margin-left: 30%;
+}
+.cont1{
+    margin-left:10%;
+}
+.all{
+    margin-top: 5%;
+    margin-left: 5% ;
+}
+.fb{
+    margin-top:100px;
+    margin-left: 33%;
+}
+.feed{
+    margin-top:40px;
+    margin-left:3%;
+}
+.box{
+    margin-left: 40%;
+}
+.bt{
+    margin-left: 45%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="./add.js"></script>
+    <script src="../nav.js"></script>
+  </head>
+
+  <body onload="loadnav();verify_nav()">
+    <nav id="nav_inject"></nav>
+    <div class="main_container">
+      <fieldset>
+        <legend style="font-size: 24px">Add a Product</legend>
+        <table>
+          <tr>
+            <td class="add_td">Product Name:</td>
+            <td>
+              <input type="text" id="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td><input type="text" id="desc" /></td>
+          </tr>
+          <tr>
+            <td>Base Price:</td>
+            <td><input type="text" id="baseprice" /></td>
+          </tr>
+          <tr>
+            <td>Minimum Increment:</td>
+            <td><input type="text" id="minInc" /></td>
+          </tr>
+          <tr>
+            <td>Product Image:</td>
+            <td>
+              <input type="file" id="img" onchange="upload(event)" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+  </body>
+</html>
